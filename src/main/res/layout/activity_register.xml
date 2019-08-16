@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textSize="30dp"
+        android:layout_marginLeft="90dp"
+        android:textColorHighlight="@android:color/background_dark"
+        android:textColor="@color/colorPrimary"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/veertL"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        >
+        <TextView android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            />
+        <EditText android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbNom"
+            />
+
+        <TextView android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="Prenom"
+            />
+        <EditText android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbprenom"
+            />
+
+        <TextView android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/tbPhone"/>
+        />
+        <TextView android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/tbEmail"/>
+        <TextView android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            />
+        <EditText android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tbuser"
+            />
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/tbPswd"
+            android:layout_alignBottom="@+id/veertL"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/lVert"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="110dp">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/btnRegister"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back? "
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:id="@+id/btnShowLogin"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.widget.RelativeLayout>
